@@ -31,22 +31,12 @@ Color:red
 ###loops
 
 # for
-do 10 times:
-    something
-
-# do for
-do:
-    something
-10 times
-
-# do while
-do forever:
-    something
+set reaper as new Unit 10 times
 
 # while
-do:
-    something
-forever
+set reaper as new Unit while reaper:isAlive
+set reaper as new Unit until reaper:isDead
+
 
 # foreach
 for each kebab in kebabs do
